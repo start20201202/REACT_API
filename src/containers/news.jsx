@@ -50,7 +50,7 @@ class News extends Component {
 
     return (
       <div className="wrapper">
-        <Title title="Hacker News" />
+        <Title title="News" />
         <Input onKeyPress={this.getSearch} onChange={this.handleInputChange} value={searchQuery} />
         <ul className="newsList">
           {hits.map(({ author, created_at, num_comments, objectID, title, points, url }) =>
